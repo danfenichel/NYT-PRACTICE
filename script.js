@@ -20,3 +20,4 @@ var articlesEl = $("#articles");
 
     // button click on clear results button
         // empty out search results from #articles div
+

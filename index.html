@@ -12,17 +12,74 @@
 </head>
 <body>
 
+    <!--Container-->
+    <div class="container">
+
+    <!--Jumbotron-->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4">New York Times Search</h1>
         </div>
       </div>
 
+      <!--Rows for Content-->
+      <div class="row">
+        <div class="col-sm-12">
+        <br>
+
+ <!-- First panel is for handling the search parameters -->
+ <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title"><strong><i class="fa  fa-list-alt"></i>Search Parameters</strong></h3>
+    </div>
+    <div class="panel-body">
+
+      <form role="form">
+
+        <!--Search Box-->
+        <div class="form-group">
+          <label for="search">Search Term:</label>
+          <input type="text" class="form-control" id="search">
+        </div>
+
+        <!--Number of records-->
+        <div class="form-group">
+          <label for="pwd">Number of Records to Retrieve:</label>
+          <select class="form-control" id="num-records-select">
+                      <option value="1" selected>1</option>
+                      <option value="5">5</option>
+                      <option value="10">10</option>
+                  </select>
+        </div>
+
+        <!--Start Year-->
+        <div class="form-group">
+          <label for="start-year">Start Year (Optional):</label>
+          <input type="text" class="form-control" id="start">
+        </div>
+
+        <!--End Year-->
+        <div class="form-group">
+          <label for="end-year">End Year (Optional):</label>
+          <input type="text" class="form-control" id="end">
+        </div>
+
+        <!--Submit/Clear Buttons-->
+        <button type="submit" class="btn btn-search" id="run">Search</button>
+        <button type="button" class="btn btn-clear" id="clear">Clear Results</button>
+
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
     <!--Link to JavaScript-->
-    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
+    <script src="script.js"></script>
+
 </body>
 </html>
