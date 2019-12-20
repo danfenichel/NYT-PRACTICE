@@ -4,5 +4,12 @@ div.jumbotron {
     font-size: 35px;
     font-weight: bolder;
     background-color:#20315A;
-    color: white
+    color: white;
+    border-radius: 3%;
   }
+
+  .btn {
+    color: #ffffff;
+    background-color: #95A5A6;
+    border-color: #95A5A6;
+}
